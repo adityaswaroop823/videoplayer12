@@ -1,0 +1,30 @@
+.thumbnail-circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 50px;
+  }
+  
+  .thumbnail-circles > div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity 0.3s;
+  }
+  
+  .thumbnail-circles > div:hover {
+    opacity: 1;
+  }
+  
+  .thumbnail-circles > div.active {
+    border: 2px solid white;
+  }
+  
